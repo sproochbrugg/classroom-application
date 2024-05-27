@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Sitzordnung</title>
+    <link rel="stylesheet" href="style_s.css">
+    <link rel="icon" href="logo2.png">
+</head>
+<body>
+    <h1>Sitzordnung</h1>
+    <a href="Gruppengenerator.html"><p>Gruppengenerator</p></a>
+    <a href="Sitzordnung.html"><p>Sitzordnung</p></a>
+    <a href="Green_Yellow_Red.html"><p>Green Yellow Red</p></a>
+    <a href="Glücksrad.html"><p>Glücksrad</p></a>
+    <a href="Timer.html"><p>Timer</p></a>
+    <a href="Home.html"><p>Home</p></a>
+
+    <p1><button onclick="openModal()">Erklärvideo</button></p1>
+    <p1><button onclick="suport()">Anleitung</button></p1>
+
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe width="98%" height="100%" src="v_s.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+    <div id="buttonContainer">
+        <p4>
+            <button id="addColumn">Kriteriengruppen hinzufügen</button>
+            <button id="assignNamesButton">Namen zuordnen</button>
+            <button id="toggleColumnsButton">Kriteriengruppen ein/ausblenden</button>
+        </p4>
+    </div>
+
+
+    
+    <div id="inputContainer">
+    </div>
+    
+    <div id="gt"></div>
+    
+    <div id="squareContainer" class="squareContainer"></div>
+
+    <script src="script_s.js"></script>
+</body>
+</html>

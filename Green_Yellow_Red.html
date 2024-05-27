@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Green Yellow Red</title>
+    <link rel="stylesheet" href="style_gyr.css">
+    <link rel="icon" href="logo2.png">
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <h1>Green Yellow Red</h1>
+    <a href="Gruppengenerator.html"><p>Gruppengenerator</p></a>
+    <a href="Sitzordnung.html"><p>Sitzordnung</p></a>
+    <a href="Green_Yellow_Red.html"><p>Green Yellow Red</p></a>
+    <a href="Glücksrad.html"><p>Glücksrad</p></a>
+    <a href="Timer.html"><p>Timer</p></a>
+    <a href="Home.html"><p>Home</p></a>
+
+    <p1><button onclick="openModal()">Erklärvideo</button></p1>
+    <p1><button onclick="suport()">Anleitung</button></p1>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe width="98%" height="100%" src="v_gyr.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="controls">
+        <label for="greenMin">Zeit eingeben (Sekunden)</label>
+        <label for="greenMin">Grün mindestens:</label>
+        <input type="number" id="greenMin" min="0" value="">
+        <label for="greenMax">Grün maximal:</label>
+        <input type="number" id="greenMax" min="0" value="">
+        <label for="yellowMin">Gelb mindestens:</label>
+        <input type="number" id="yellowMin" min="0" value="">
+        <label for="yellowMax">Gelb maximal:</label>
+        <input type="number" id="yellowMax" min="0" value="">
+       <p2><button id="startButton">Start</button></p2> 
+    </div>
+
+    <div id="trafficLight"></div>
+
+    <script src="script_gyr.js"></script>
+</body>
+</html>

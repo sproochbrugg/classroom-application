@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Gruppengenerator</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="style_g.css">
+</head>
+<body>
+    <h1>Gruppengenerator</h1>
+    <a href="Gruppengenerator.html"><p>Gruppengenerator</p></a>
+    <a href="Sitzordnung.html"><p>Sitzordnung</p></a>
+    <a href="Green_Yellow_Red.html"><p>Green Yellow Red</p></a>
+    <a href="Glücksrad.html"><p>Glücksrad</p></a>
+    <a href="Timer.html"><p>Timer</p></a>
+    <a href="Home.html"><p>Home</p></a>
+
+    <p1><button onclick="openModal()">Erklärvideo</button></p1>
+    <p1><button onclick="suport()">Anleitung</button></p1>
+
+    <div id="groupingControls">
+        <label for="groupSize">Gruppengröße:</label>
+        <input type="number" id="groupSize" name="groupSize" value="2">
+    </div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe width="98%" height="100%" src="v_g.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+    <div id="buttonContainer">
+       <p4>
+            <button id="addColumn">Kriteriengruppen hinzufügen</button>
+            <button onclick="enterTexts()">Gruppen generieren</button>
+            <button id="toggleColumnsButton">Kriteriengruppen ein/ausblenden</button>
+            <p3><button onclick="saveData()">Klasse speichern</button></p3>
+            <button onclick="loadData()">Klasse laden</button>
+            <button onclick="showAllSaves()">Alle Klassen anzeigen</button>
+        </p4>
+    </div>
+
+    <div id="saveModal" class="modal">
+        <div class="modal-content">
+            <span id="closeSaveModal" class="close" onclick="closeSaveModal()">&times;</span>
+            <h2>Speichern</h2>
+            <input type="text" id="saveName" placeholder="Klassenname">
+            <button onclick="confirmSave()">Speichern</button>
+        </div>
+    </div>
+    
+    <div id="loadModal" class="modal">
+        <div class="modal-content">
+            <span id="closeLoadModal" class="close" onclick="closeLoadModal()">&times;</span>
+            <h2>Laden</h2>
+            <select id="loadSelect"></select>
+            <button onclick="confirmLoad()">Laden</button>
+        </div>
+    </div>
+
+    <div id="allSavesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAllSavesModal()">&times;</span>
+            <h2>Klassen verwalten</h2>
+            <ul id="savesList"></ul>
+        </div>
+    </div>
+
+    <div id="inputContainer">
+    </div>
+
+    <div id="gt"></div>
+
+    <script src="script_g.js"></script>
+</body>
+</html>

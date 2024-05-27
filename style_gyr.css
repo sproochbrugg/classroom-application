@@ -1,0 +1,131 @@
+body {
+    background-image: url('b1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 60px;
+    color: azure;
+    text-align: center;
+    margin-bottom: 0%;
+    border-top:15px darkblue solid;
+    border-bottom:15px darkblue solid;
+}
+p{
+    font-size:2.3vh;
+    color: azure;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 1%;
+    border:1vh darkblue solid;
+    border-radius: 20px 5px;
+    background-color: darkblue;
+    
+}
+p:hover{
+    scale:1.2;
+}
+p1 button{
+    font-size:2.3vh;
+    color: darkblue;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 1%;
+    border:1vh white solid;
+    border-radius: 20px 5px;
+    background-color: White;
+    font-family: serif;
+}
+p1:hover {
+    cursor: pointer;
+}
+p1 button:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+button:hover {
+    cursor: pointer;
+}
+
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    margin-right: 20px;
+}
+
+p2 button {
+    font-size:2.0vh;
+    color: azure;
+    display: inline-block;
+    margin-top: 1%;
+    border:10px darkblue solid;
+    border-radius: 10px;
+    background-color: darkblue;
+    cursor: pointer;
+    font-family: serif;
+}
+
+#trafficLight {
+    width: 100%;
+    height: 95vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: green;
+    border: 5px solid black;
+}
+label{
+    font-size:2.0vh;
+    color: azure;
+    display: inline-block;
+    margin-top: 1%;
+    border:10px darkblue solid;
+    border-radius: 10px;
+    background-color: darkblue;
+}
+ /* CSS for the modal */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+     /* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%; /* Could be more or less, depending on screen size */
+    height: 95%;
+}
+/* Close button */
+.close {
+    color: red;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: darkred;
+    text-decoration: none;
+    cursor: pointer;
+    scale: 1.2;
+}

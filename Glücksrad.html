@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Glücksrad</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="style_gr.css">
+</head>
+<body>
+    <h1>Glücksrad</h1>
+    <a href="Gruppengenerator.html"><p>Gruppengenerator</p></a>
+    <a href="Sitzordnung.html"><p>Sitzordnung</p></a>
+    <a href="Green_Yellow_Red.html"><p>Green Yellow Red</p></a>
+    <a href="Glücksrad.html"><p>Glücksrad</p></a>
+    <a href="Timer.html"><p>Timer</p></a>
+    <a href="Home.html"><p>Home</p></a>
+
+    <p1><button onclick="openModal()">Erklärvideo</button></p1>
+    <p1><button onclick="suport()">Anleitung</button></p1>
+
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe width="98%" height="100%" src="v_gr.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+   <p2>    
+        <button onclick="turnWheel()">Drehen</button>
+        <button onclick="addDivision()">+</button>
+        <button onclick="removeDivision()">-</button>
+    </p2> 
+
+    <script src="script_gr.js"></script>
+</div>
+</html>

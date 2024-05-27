@@ -1,0 +1,48 @@
+body {
+    background-image: url('b1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 15vh;
+    color: azure;
+    text-align: center;
+    margin-bottom: 0%;
+    border-top:30px darkblue solid;
+    border-bottom:30px darkblue solid;
+}
+
+p{
+    font-size:6vh;
+    color: azure;
+    display: inline-block;
+    margin-left: 2.2vh;
+    margin-top: 1%;
+    border:10px darkblue solid;
+    border-radius: 20px 5px;
+    background-color: darkblue;
+    
+}
+p1{
+    position: relative;
+    font-size:2vh;
+    color: azure;
+    display: inline-block;
+    margin-right:85%;
+    margin-top: 0.5%;
+    border:10px darkblue solid;
+    border-radius: 10px;
+    background-color: darkblue;
+    
+}
+p:hover{
+    scale:1.1;
+}
+
+p4{
+    font-size: 15vh;
+    color: white;
+    border: 100px darkblue solid;
+    background-color:darkblue ;
+}
